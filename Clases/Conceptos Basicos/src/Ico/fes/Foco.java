@@ -9,7 +9,7 @@ package Ico.fes;
  * @author Marely Medina
  */
 public class Foco {
-    private String colo;
+    private String color;
     private String tipo;
     private int tamano;
 
@@ -17,7 +17,7 @@ public class Foco {
     }
 
     public Foco(String colo, String tipo, int tamano) {
-        this.colo = colo;
+        this.color = colo;
         this.tipo = tipo;
         this.tamano = tamano;
     }
@@ -31,11 +31,11 @@ public class Foco {
     }
 
     public String getColo() {
-        return colo;
+        return color;
     }
 
     public void setColo(String colo) {
-        this.colo = colo;
+        this.color = colo;
     }
 
     public String getTipo() {
@@ -48,7 +48,7 @@ public class Foco {
 
     @Override
     public String toString() {
-        return "Foco{" + "colo=" + colo + ", tipo=" + tipo + ", tamano=" + tamano + '}';
+        return "Foco{" + "colo=" + color + ", tipo=" + tipo + ", tamano=" + tamano + '}';
     }
     
     
