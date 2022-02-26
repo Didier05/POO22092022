@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package tarea.libro;
+package libro;
 
 /**
  *
  * @author Marely Medina
  */
-public class TareaLibro {
+public class Libro {
 
     /**
      * @param args the command line arguments
