@@ -45,6 +45,11 @@ public class Foco {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    @Override
+    public String toString() {
+        return "Foco{" + "colo=" + colo + ", tipo=" + tipo + ", tamano=" + tamano + '}';
+    }
     
     
 }
