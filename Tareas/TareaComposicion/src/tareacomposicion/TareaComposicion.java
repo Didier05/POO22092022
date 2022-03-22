@@ -5,8 +5,12 @@
 package tareacomposicion;
 
 import ClasesFinales.ClaseLibro;
+import ClasesFinales.ClasePelicula;
+import ClasesparaComposicion.Actor;
 import ClasesparaComposicion.Autor;
+import ClasesparaComposicion.Director;
 import ClasesparaComposicion.Editorial;
+import ClasesparaComposicion.Productora;
 
 /**
  *
@@ -22,6 +26,7 @@ public class TareaComposicion {
         
   
         System.out.println("Becerra Medina Carlos Didier  2209");
+        
         System.out.println("\n\t****** Libro *******\n");
         System.out.println("\tLibro 1");
         ClaseLibro lib1=new ClaseLibro("Baldor", 100, 
@@ -45,9 +50,13 @@ public class TareaComposicion {
         lib2.Leer();
         lib2.getAutor().Imaginar();
         
-        System.out.println("\n\t****** Pelicula *******");
-        
-        
+        System.out.println("\n\t****** Película *******");
+        System.out.println("\tPelícula 1");
+        ClasePelicula pel1=new ClasePelicula("Flaspoint", 190, 
+                new Actor(29, "Ezra Miller"),
+                new Productora("Metro-Goldwyn-Mayer", "León rugiendo"), 
+                new Director("Andy Muschietti ", 15));
+        System.out.println(pel1);
     }
     
 }

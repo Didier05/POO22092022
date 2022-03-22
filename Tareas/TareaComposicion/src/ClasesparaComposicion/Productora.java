@@ -8,24 +8,16 @@ package ClasesparaComposicion;
  *
  * @author Marely Medina
  */
-public class Productor {
+public class Productora {
     private String Nombre;
-    private int Edad;
+    private String Logotipo;
 
-    public Productor() {
+    public Productora() {
     }
 
-    public Productor(String Nombre, int añosCarre) {
+    public Productora(String Nombre, String Logotipo) {
         this.Nombre = Nombre;
-        this.Edad = añosCarre;
-    }
-
-    public int getAñosCarre() {
-        return Edad;
-    }
-
-    public void setAñosCarre(int añosCarre) {
-        this.Edad = añosCarre;
+        this.Logotipo = Logotipo;
     }
 
     public String getNombre() {
@@ -36,17 +28,26 @@ public class Productor {
         this.Nombre = Nombre;
     }
 
+    public String getLogotipo() {
+        return Logotipo;
+    }
+
+    public void setLogotipo(String Logotipo) {
+        this.Logotipo = Logotipo;
+    }
+
     @Override
     public String toString() {
-        return "Productora{" + "Nombre=" + Nombre + ", a\u00f1osCarre=" + Edad + '}';
+        return "Productora{" + "Nombre=" + Nombre + ", Logotipo=" + Logotipo + '}';
     }
-    
-    public void Organizar(){
-        System.out.println(this.Nombre+" se esta organizando con todos los camrarografos para poder grabar toda la pelicula ");
+
+     public void Cotizar(){
+        System.out.println(this.Nombre+" esta cotizando el gasto total que conllevara realizar la pelicula");
     }
     
     public void Selecciona(){
         System.out.println(this.Nombre+" esta seleccionando a todas las personas que trabajar en la pelicula");
-    }
+    } 
     
+       
 }
