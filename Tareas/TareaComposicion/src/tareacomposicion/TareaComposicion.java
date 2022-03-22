@@ -57,6 +57,28 @@ public class TareaComposicion {
                 new Productora("Metro-Goldwyn-Mayer", "León rugiendo"), 
                 new Director("Andy Muschietti ", 15));
         System.out.println(pel1);
+        pel1.Recomendar();
+        pel1.getActor().Caracterizar();
+        pel1.getCasaProductora().Selecciona();
+        pel1.getDirector().Dirigir();
+        
+        
+         System.out.println("\n");
+        System.out.println("\tPelícula 2");
+        ClasePelicula pel2=new ClasePelicula();
+        pel2.setNombre("Batman");
+        pel2.setDuracion(180);
+        pel2.setActor(new Actor(35, "Robert Pattinson"));
+        pel2.setCasaProductora(new Productora("DC Entertainment", "DC"));
+        pel2.setDirector(new Director("Matt Reeves", 20));
+        System.out.println(pel2);
+        pel2.Entretener();
+        pel2.getActor().Prepararse();
+        pel2.getCasaProductora().Cotizar();
+        pel2.getDirector().Transmitir();
+                
+        
+        
     }
     
 }

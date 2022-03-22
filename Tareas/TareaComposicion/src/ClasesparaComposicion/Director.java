@@ -43,7 +43,7 @@ public class Director {
     }
     
      public void Dirigir(){
-         System.out.println(this.Nombre+" comenzó a dirigir un nuevo proyecto que se estrenara el prosimo año");
+         System.out.println(this.Nombre+" comenzó a dirigir un nuevo proyecto que se estrenara el proximo año");
      }
     
      public void Transmitir(){

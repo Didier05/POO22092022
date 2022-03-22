@@ -77,7 +77,7 @@ public class ClasePelicula {
         return "ClasePelicula{" + "Nombre=" + Nombre + ", Duracion=" + Duracion + ", Actor=" + Actor + ", casaProductora=" + casaProductora + ", Director=" + Director + '}';
     */
         String estado = "Nombe: " +this.Nombre + "\n";
-    estado = estado  + "Duración: " + this.Duracion +" horas\n";
+    estado = estado  + "Duración: " + this.Duracion +" minutos\n";
     estado = estado +"Actor: "+ this.Actor.getNombre() + "\t" + "Edad: "+ this.getActor().getEdad()+" años de edad\n";
      estado = estado  + "Director:  Nombre: " + this.Director.getNombre()  + "\t" +"Tiempo de carrera: "+ this.getDirector().getAñosCarrera()+" años\n"; 
      estado= estado +"Casa productora:  Nombre: " + this. casaProductora.getNombre()+ "\t"+ "Logotipo: " + this.casaProductora.getLogotipo() ;
