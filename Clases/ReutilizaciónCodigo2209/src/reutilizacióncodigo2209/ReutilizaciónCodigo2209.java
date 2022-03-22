@@ -10,7 +10,11 @@ import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
 import ico.fes.componentes.Teclado;
 import ico.fes.herencia.Alumno;
+import ico.fes.herencia.Servidor;
+import ico.fes.herencia.polimorfismo.Animal;
+import ico.fes.herencia.polimorfismo.Perro;
 import javax.swing.JFrame;
+import javax.swing.plaf.basic.BasicBorders;
 
 /**
  *
@@ -69,6 +73,31 @@ public class ReutilizaciónCodigo2209 {
         Alumno alu2= new Alumno("12354897  ",  "ICO ", "Jose Perez ", 19);
         System.out.println(alu2);
                 
+        alu1.setNumeroCuenta("2333988494");
+        alu1.setEdaad(19);
+        System.out.println(alu1);
+        
+        
+        System.out.println("-------\tComposicion y herencia en la misma clase\t--------");
+        Servidor server=new Servidor();
+        server.setNumeroTarjetasRed(2);
+        server.setMarca("Hp");
+        server.setRaton(new Mouse("Lg", "Optico"));
+        System.out.println(server);
+        server.getRaton().setMarca("Logitech"); // para solo cambiar la marca y no el tipo 
+        System.out.println(server);
+       
+        
+        
+        System.out.println("---\tEjemplo polimorfismo\t----");
+        Perro dog=new Perro("Bull dog", "% estrellas ", 4);
+         
+        Animal animal1= new Animal(4);
+        dog.emitirSonido();
+        animal1.emitirSonido();
+       
+       
+       
     }
     
 }
