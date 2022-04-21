@@ -50,7 +50,7 @@ public class Perro extends Animal {
     
     
     @Override
-    public void emitirSonido(){
+    public void emitirSonido(){// se trae con sobre escritura= Override
         System.out.println("El perro esta ladrando ...  Guau! Guau!");
     }
     
