@@ -105,7 +105,6 @@ public class JavaBasico2209 {
         System.out.println(val1 | val2);
         System.out.println("\n\t Val1 AND Val 2\t");
         System.out.println(val1 & val2);
-        
         /*
         Que esta pasando , esto:
         val1=0000...0001;
@@ -179,6 +178,8 @@ public class JavaBasico2209 {
             System.out.println(alumno.evaluarDesempeño());
             
         }
+             
+        
     }
     
 }
