@@ -6,6 +6,7 @@ package javabasico2209;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -180,6 +181,52 @@ public class JavaBasico2209 {
         }
              
         
+        ArrayList<Alumno> grupo2209 = new ArrayList<Alumno>();
+                grupo2209.add( new Alumno("9999999", 2, 9.0f));
+                grupo2209.add( new Alumno("8888888", 2, 8.0f));
+                grupo2209.add( new Alumno("7777777", 2, 7.0f));
+                grupo2209.add( new Alumno("6666666", 2, 6.0f));
+                grupo2209.add( new Alumno("5555555", 2, 5.0f));
+                for (Alumno alumno : grupo2209) {
+                    System.out.println(alumno);
+        }
+                System.out.println("Add con indice");
+                grupo2209.add(2, new Alumno("8111111", 3, 9.9f));
+             for (Alumno alumno : grupo2209) {
+                    System.out.println(alumno);
+        }
+             
+             Alumno  tmp  = grupo2209.get(3); //NC=7777777
+             
+            System.out.println("Alumno en index 1: "+ tmp);
+            System.out.println("Emilinar el index");
+            Alumno tmp2 = grupo2209.remove(3);
+             System.out.println("El elemento sacado es: " + tmp2);
+              for (Alumno alumno : grupo2209) {
+                    System.out.println(alumno);
+        }
+               System.out.println("Remplazar el i- enesimo");
+              Alumno tmp3= grupo2209.set(0, new Alumno("4444444", 4, 4.0f));
+              System.out.println("El elemento sacado es: " + tmp3);
+              for (Alumno alumno : grupo2209) {
+                    System.out.println(alumno);
+        }
+              
+              
+              
+              //excepciones 
+              //trycatch + tab
+              try {
+            System.out.println("Excepciones");
+              System.out.println(grupo2209.get(20));
+                } catch (Exception e) {
+                    System.out.println("Error ...  revisa los indices ");
+            
+                }
+              System.out.println("Fin del Programa");
+              
+             
+             
     }
     
 }
