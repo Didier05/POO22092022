@@ -25,7 +25,7 @@ import javax.swing.JTextField;
 public class VentanaSWING extends JFrame {
 private JTextField Cuadro;
 private JButton Boton;
-private JLabel Resultado;
+private JTextField Resultado;
     
     public VentanaSWING() throws HeadlessException {
         setTitle("Conversion de °C   a  °F");
@@ -37,7 +37,7 @@ private JLabel Resultado;
         Boton.setBackground(Color.GREEN);
         Boton.setOpaque(true);
         Boton.setToolTipText("Click para convertir en °F");
-        Resultado = new JLabel("°F");
+        Resultado = new JTextField("", 10);
         this.getContentPane().add(Cuadro);
         this.getContentPane().add(Boton);
         this.getContentPane().add(Resultado);
