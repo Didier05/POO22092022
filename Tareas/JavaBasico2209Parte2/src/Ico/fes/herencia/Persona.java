@@ -10,21 +10,21 @@ package Ico.fes.herencia;
  */
 public class Persona {
     protected String Nombre;//protected
-    protected String Edad;
+    protected int Edad;
 
     public Persona() {
     }
 
-    public Persona(String Nombre, String Edad) {
+    public Persona(String Nombre, int Edad) {
         this.Nombre = Nombre;
         this.Edad = Edad;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return Edad;
     }
 
-    public void setEdad(String Edad) {
+    public void setEdad(int Edad) {
         this.Edad = Edad;
     }
 
@@ -38,7 +38,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "Nombre=" + Nombre + ", Edad=" + Edad + '}';
+        return  Nombre +" , " +  Edad + " años";
     }
     
     public void comer(){
