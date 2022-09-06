@@ -18,7 +18,17 @@ public class ProgrmasEstructuraDeDatos {
     public static void main(String[] args) {
         // TODO code application logic here
         Arreglo<Integer> arr = new Arreglo<>(5);
-        
+        arr.getLongitud();
+        arr.setElemento(1, 4);
+        arr.setElemento(2, 7);
+        arr.setElemento(0, 5);
+        arr.setElemento(3, 9);
+        arr.getLongitud();
+        arr.toString();
+        arr.limpiar(null);
+              
+                
+                
         
         
         
