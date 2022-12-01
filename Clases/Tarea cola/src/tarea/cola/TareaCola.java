@@ -13,44 +13,44 @@ public class TareaCola {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // TODO code application logic here
         
-        QueueNodo<Integer> nodeQueue = new QueueNodo<>();
+        QueueNodo<Integer> nodo1 = new QueueNodo<>();
         System.out.println("QueueNode");
-        System.out.println("isEmpty: " + nodeQueue.isEmpty());
+        System.out.println("isEmpty: " + nodo1.isEmpty());
         System.out.println("enqueue(1)");
-        nodeQueue.enqueue(1);
+        nodo1.enqueue(1);
         System.out.println("enqueue(2)");
-        nodeQueue.enqueue(2);
+        nodo1.enqueue(2);
         System.out.println("enqueue(3)");
-        nodeQueue.enqueue(3);
-        System.out.println(nodeQueue);
-        System.out.println("length: " + nodeQueue.length());
-        System.out.println("isEmpty: " + nodeQueue.isEmpty());
-        System.out.println("front: " + nodeQueue.front());
-        System.out.println("dequeue: " + nodeQueue.dequeue());
-        System.out.println("dequeue: " + nodeQueue.dequeue());
-        System.out.println("dequeue: " + nodeQueue.dequeue());
-        System.out.println("isEmpty: " + nodeQueue.isEmpty());
+        nodo1.enqueue(3);
+        System.out.println(nodo1);
+        System.out.println("length: " + nodo1.length());
+        System.out.println("isEmpty: " + nodo1.isEmpty());
+        System.out.println("front: " + nodo1.front());
+        System.out.println("dequeue: " + nodo1.dequeue());
+        System.out.println("dequeue: " + nodo1.dequeue());
+        System.out.println("dequeue: " + nodo1.dequeue());
+        System.out.println("isEmpty: " + nodo1.isEmpty());
 
-        QueueArr<Integer> arrayQueue = new QueueArr<>(5);
+        QueueArr<Integer> arrqueue = new QueueArr<>(5);
         System.out.println("QueueArray");
-        System.out.println("isEmpty: " + arrayQueue.isEmpty());
+        System.out.println("isEmpty: " + arrqueue.isEmpty());
         System.out.println("enqueue(1)");
-        arrayQueue.enqueue(1);
+        arrqueue.enqueue(1);
         System.out.println("enqueue(2)");
-        arrayQueue.enqueue(2);
+        arrqueue.enqueue(2);
         System.out.println("enqueue(3)");
-        arrayQueue.enqueue(3);
-        System.out.println(arrayQueue);
-        System.out.println("length: " + arrayQueue.length());
-        System.out.println("isEmpty: " + arrayQueue.isEmpty());
-        System.out.println("front: " + arrayQueue.font());
-        System.out.println("dequeue: " + arrayQueue.dequeue());
-        System.out.println("dequeue: " + arrayQueue.dequeue());
-        System.out.println("dequeue: " + arrayQueue.dequeue());
-        System.out.println("isEmpty: " + arrayQueue.isEmpty());
+        arrqueue.enqueue(3);
+        System.out.println(arrqueue);
+        System.out.println("length: " + arrqueue.length());
+        System.out.println("isEmpty: " + arrqueue.isEmpty());
+        System.out.println("front: " + arrqueue.font());
+        System.out.println("dequeue: " + arrqueue.dequeue());
+        System.out.println("dequeue: " + arrqueue.dequeue());
+        System.out.println("dequeue: " + arrqueue.dequeue());
+        System.out.println("isEmpty: " + arrqueue.isEmpty());
     }
     
 }
